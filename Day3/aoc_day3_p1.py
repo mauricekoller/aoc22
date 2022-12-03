@@ -7,8 +7,6 @@ with open('Day3\input.txt', 'r') as input:
         item_len_half = int(len(item)/2)
         first_half = item[:item_len_half]
         second_half = item[item_len_half:]
-        print(first_half)
-        print(second_half)
         for letter in first_half:
             if letter in second_half:
                 similarity = letter
@@ -18,8 +16,6 @@ with open('Day3\input.txt', 'r') as input:
                 else:
                     priority = ord(similarity)-38
                 break
-        print(similarity)
-        print(f'Priority of similar letter {similarity} : {priority}')
         total_points += priority
 
     print(f'Result: {total_points}')

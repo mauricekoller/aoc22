@@ -14,8 +14,6 @@ with open('Day3\input.txt', 'r') as input:
                 else:
                     priority = ord(similarity)-38
                 break
-        print(similarity)
-        print(f'Priority of similar letter {similarity} : {priority}')
         total_points += priority
 
     print(f'Result: {total_points}')
