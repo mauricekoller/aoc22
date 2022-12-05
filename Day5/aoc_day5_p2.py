@@ -24,13 +24,10 @@ with open('Day5/input.txt', 'r') as input:
     for operation in operations:
         quantity, container_from, container_to = operation.split(' ')[1::2]
         elements_to_move = []
-        print(f'Before: {container_array[int(container_from)-1]}  {container_array[int(container_to)-1]}')
         for i in range(int(quantity)):
             element_to_move = container_array[int(container_from)-1].pop()
             elements_to_move.append(element_to_move)
         container_array[int(container_to)-1].extend(elements_to_move[::-1])
-        print(f'After: {container_array[int(container_from)-1]}  {container_array[int(container_to)-1]}')
-        print(f'Moved {elements_to_move}')
 
     # Concat all Top Elements
     result = ''.join(container[-1] for container in container_array)
