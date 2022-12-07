@@ -1,6 +1,3 @@
-from copy import deepcopy
-
-
 def abspath(dir_list):
     return '/'.join(dir_list)
 
@@ -41,9 +38,7 @@ with open('Day7/input.txt', 'r') as input:
             # check if dir or filesize
             if split_line[0] == 'dir':
                 dir = split_line[1]
-                new_dir = deepcopy(current_dir)
-                new_dir.append(dir)
-                new_dir = abspath(new_dir)
+                new_dir = abspath(current_dir+[dir])
                 fs[abspath(current_dir)]['childnodes'].append(new_dir)
                 fs[new_dir] = {'parent_dir': [abspath(current_dir)], 'childnodes': [], 'files': [], 'dir_size': 0}
             else:
