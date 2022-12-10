@@ -1,4 +1,4 @@
-with open('Day9/input.txt', 'r') as input:
+with open('day_09/input.txt', 'r') as input:
     text_lines = input.read().rstrip().splitlines()
     position_head = [0, 0]
     position_tail = [0, 0]
