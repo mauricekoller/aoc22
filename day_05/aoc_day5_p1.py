@@ -1,4 +1,4 @@
-with open('Day5/input.txt', 'r') as input:
+with open('day_05/input.txt', 'r') as input:
     text = input.read().rstrip()
     # Split Input file into List of Containers and list of operations to be executed
     containers, operations = [object.splitlines() for object in text.split('\n\n')]

@@ -15,7 +15,7 @@ def find_closest_dir(fs, size):
     return closest_dir_size
 
 
-with open('Day7/input.txt', 'r') as input:
+with open('day_07/input.txt', 'r') as input:
     text = input.read().rstrip().splitlines()
 
     current_dir = []

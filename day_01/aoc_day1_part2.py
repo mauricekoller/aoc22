@@ -1,4 +1,4 @@
-with open('Day1\input.txt', 'r') as input:
+with open('day_01\input.txt', 'r') as input:
     calories = input.read().rstrip()
     calories = calories.splitlines()
     elves = [0]

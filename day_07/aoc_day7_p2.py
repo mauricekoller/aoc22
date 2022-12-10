@@ -59,7 +59,7 @@ def recalculate_final_tree(fs):
     return fs
 
 
-with open('Day7/input.txt', 'r') as input:
+with open('day_07/input.txt', 'r') as input:
     text = input.read().rstrip()
     text = text.splitlines()
 

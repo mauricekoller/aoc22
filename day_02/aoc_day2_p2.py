@@ -1,4 +1,4 @@
-with open('Day2\input.txt', 'r') as input:
+with open('day_02\input.txt', 'r') as input:
     games = input.read().rstrip()
     games = games.splitlines()
 

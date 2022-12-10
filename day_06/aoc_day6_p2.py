@@ -1,4 +1,4 @@
-with open('Day6/input.txt', 'r') as input:
+with open('day_06/input.txt', 'r') as input:
     text = input.read().rstrip()
     marker_len = 14
 

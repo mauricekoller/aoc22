@@ -1,4 +1,4 @@
-with open('Day2\input.txt', 'r') as input:
+with open('day_02\input.txt', 'r') as input:
     games = input.read().rstrip()
     games = games.splitlines()
 
@@ -10,7 +10,7 @@ with open('Day2\input.txt', 'r') as input:
         secondletter = game[2:]
         if (game in analysis['win']):
             outcome_score = 6
-        elif(game in analysis['draw']):
+        elif (game in analysis['draw']):
             outcome_score = 3
         else:
             outcome_score = 0

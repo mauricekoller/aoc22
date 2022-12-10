@@ -2,7 +2,7 @@ def abspath(dir_list):
     return '/'.join(dir_list)
 
 
-with open('Day7/input.txt', 'r') as input:
+with open('day_07/input.txt', 'r') as input:
     text = input.read().rstrip().splitlines()
 
     current_dir = []

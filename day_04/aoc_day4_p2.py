@@ -1,4 +1,4 @@
-with open('Day4/input.txt', 'r') as input:
+with open('day_04/input.txt', 'r') as input:
     crews = input.read().rstrip().splitlines()
 
     pairs = 0

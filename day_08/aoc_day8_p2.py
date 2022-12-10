@@ -1,4 +1,4 @@
-with open('Day8/input.txt', 'r') as input:
+with open('day_08/input.txt', 'r') as input:
     text_lines = input.read().rstrip().splitlines()
 
     forest = []
